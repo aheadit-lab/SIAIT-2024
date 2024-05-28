@@ -1,0 +1,37 @@
+{
+    "project": {
+      "menu": "Gestion des projets & Ressources",
+      "subMenu": "Projets",
+      "link": "/projects"
+    },
+    "reclamation": {
+      "menu": "Ma relation avec la RH",
+      "subMenu": "Réclamations",
+      "link": "/reclamation"
+    },
+    "reclamationAdmin": {
+      "menu": "Gestion RH",
+      "subMenu": "Réclamations",
+      "link": "/reclamation"
+    },
+    "loan": {
+      "menu": "Gestion RH",
+      "subMenu": "Prêts/Avances",
+      "link": "/loans"
+    },
+    "menuUtilisateur": {
+      "menu": "Admin SI",
+      "subMenu": "Utilisateurs",
+      "link": "/users"
+    },
+    "menuCollaborateur": {
+      "menu": "Gestion RH",
+      "subMenu": "Collaborateurs",
+      "link": "/collaborators"
+    },
+    "leave": {
+      "menu": "Gestion RH",
+      "subMenu": "Congés",
+      "link": "/leaves"
+    }
+  }

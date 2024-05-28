@@ -1,0 +1,1378 @@
+[
+  {
+    "description": "    I want to check home page functions",
+    "keyword": "Feature",
+    "name": "Home page feature",
+    "line": 2,
+    "id": "home-page-feature",
+    "tags": [],
+    "uri": "HomePage.feature",
+    "elements": [
+      {
+        "id": "home-page-feature;check-display-of-home-page",
+        "keyword": "Scenario",
+        "line": 9,
+        "name": "Check display of home page",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 6,
+            "name": "user is on SIAIT home page",
+            "result": {
+              "status": "passed",
+              "duration": 6739000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 10,
+            "name": "home page is displayed with SIAIT logo",
+            "result": {
+              "status": "passed",
+              "duration": 45000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 11,
+            "name": "welcome message for connected user is displayed",
+            "result": {
+              "status": "passed",
+              "duration": 154000000
+            }
+          },
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "menu"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "Admin SI"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "Gestion RH"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "Gestion des projets & Ressources"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "Gestion comptable"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "Gestion de performance"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "And ",
+            "line": 12,
+            "name": "the side bar menu is displayed",
+            "result": {
+              "status": "passed",
+              "duration": 823000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 19,
+            "name": "Notifications menu is displayed",
+            "result": {
+              "status": "passed",
+              "duration": 44000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 20,
+            "name": "Profile menu is displayed",
+            "result": {
+              "status": "passed",
+              "duration": 41000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "home-page-feature;navigate-to-\"admin-si\"->-\"profiles\"-submenu",
+        "keyword": "Scenario",
+        "line": 33,
+        "name": "Navigate to \"Admin SI\" > \"Profiles\" submenu",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 6,
+            "name": "user is on SIAIT home page",
+            "result": {
+              "status": "passed",
+              "duration": 2600000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 25,
+            "name": "The user clicks on \"Admin SI\" menu",
+            "result": {
+              "status": "passed",
+              "duration": 738000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 26,
+            "name": "The user clicks on \"Profiles\" menu",
+            "result": {
+              "status": "passed",
+              "duration": 416000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 27,
+            "name": "The \"Profiles\" submenu is displayed",
+            "result": {
+              "status": "passed",
+              "duration": 107000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 28,
+            "name": "The user clicks on SIAIT logo",
+            "result": {
+              "status": "passed",
+              "duration": 2015000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 29,
+            "name": "The user is redirected to home page",
+            "result": {
+              "status": "passed",
+              "duration": 11000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "home-page-feature;navigate-to-\"admin-si\"->-\"utilisateurs\"-submenu",
+        "keyword": "Scenario",
+        "line": 34,
+        "name": "Navigate to \"Admin SI\" > \"Utilisateurs\" submenu",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 6,
+            "name": "user is on SIAIT home page",
+            "result": {
+              "status": "passed",
+              "duration": 2637000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 25,
+            "name": "The user clicks on \"Admin SI\" menu",
+            "result": {
+              "status": "passed",
+              "duration": 632000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 26,
+            "name": "The user clicks on \"Utilisateurs\" menu",
+            "result": {
+              "status": "passed",
+              "duration": 378000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 27,
+            "name": "The \"Utilisateurs\" submenu is displayed",
+            "result": {
+              "status": "passed",
+              "duration": 92000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 28,
+            "name": "The user clicks on SIAIT logo",
+            "result": {
+              "status": "passed",
+              "duration": 3464000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 29,
+            "name": "The user is redirected to home page",
+            "result": {
+              "status": "passed",
+              "duration": 12000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "home-page-feature;navigate-to-\"admin-si\"->-\"jours-feriés\"-submenu",
+        "keyword": "Scenario",
+        "line": 35,
+        "name": "Navigate to \"Admin SI\" > \"Jours feriés\" submenu",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 6,
+            "name": "user is on SIAIT home page",
+            "result": {
+              "status": "passed",
+              "duration": 2840000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 25,
+            "name": "The user clicks on \"Admin SI\" menu",
+            "result": {
+              "status": "passed",
+              "duration": 701000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 26,
+            "name": "The user clicks on \"Jours feriés\" menu",
+            "result": {
+              "status": "passed",
+              "duration": 428000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 27,
+            "name": "The \"Jours feriés\" submenu is displayed",
+            "result": {
+              "status": "passed",
+              "duration": 17000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 28,
+            "name": "The user clicks on SIAIT logo",
+            "result": {
+              "status": "passed",
+              "duration": 5096000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 29,
+            "name": "The user is redirected to home page",
+            "result": {
+              "status": "passed",
+              "duration": 9000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "home-page-feature;navigate-to-\"admin-si\"->-\"entité\"-submenu",
+        "keyword": "Scenario",
+        "line": 36,
+        "name": "Navigate to \"Admin SI\" > \"Entité\" submenu",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 6,
+            "name": "user is on SIAIT home page",
+            "result": {
+              "status": "passed",
+              "duration": 5869000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 25,
+            "name": "The user clicks on \"Admin SI\" menu",
+            "result": {
+              "status": "passed",
+              "duration": 752000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 26,
+            "name": "The user clicks on \"Entité\" menu",
+            "result": {
+              "status": "passed",
+              "duration": 402000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 27,
+            "name": "The \"Entité\" submenu is displayed",
+            "result": {
+              "status": "passed",
+              "duration": 94000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 28,
+            "name": "The user clicks on SIAIT logo",
+            "result": {
+              "status": "passed",
+              "duration": 1713000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 29,
+            "name": "The user is redirected to home page",
+            "result": {
+              "status": "passed",
+              "duration": 12000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "home-page-feature;navigate-to-\"admin-si\"->-\"parametrage\"-submenu",
+        "keyword": "Scenario",
+        "line": 37,
+        "name": "Navigate to \"Admin SI\" > \"Parametrage\" submenu",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 6,
+            "name": "user is on SIAIT home page",
+            "result": {
+              "status": "passed",
+              "duration": 2606000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 25,
+            "name": "The user clicks on \"Admin SI\" menu",
+            "result": {
+              "status": "passed",
+              "duration": 655000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 26,
+            "name": "The user clicks on \"Parametrage\" menu",
+            "result": {
+              "status": "passed",
+              "duration": 386000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 27,
+            "name": "The \"Parametrage\" submenu is displayed",
+            "result": {
+              "status": "passed",
+              "duration": 102000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 28,
+            "name": "The user clicks on SIAIT logo",
+            "result": {
+              "status": "passed",
+              "duration": 1700000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 29,
+            "name": "The user is redirected to home page",
+            "result": {
+              "status": "passed",
+              "duration": 24000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "home-page-feature;navigate-between-\"gestion-rh\"->-\"collaborateurs\"-submenu",
+        "keyword": "Scenario",
+        "line": 48,
+        "name": "Navigate between \"Gestion RH\" > \"Collaborateurs\" submenu",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 6,
+            "name": "user is on SIAIT home page",
+            "result": {
+              "status": "passed",
+              "duration": 2762000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 40,
+            "name": "The user clicks on \"Gestion RH\" menu",
+            "result": {
+              "status": "passed",
+              "duration": 640000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 41,
+            "name": "The user clicks on \"Collaborateurs\" menu",
+            "result": {
+              "status": "passed",
+              "duration": 367000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 42,
+            "name": "The \"Collaborateurs\" submenu is displayed",
+            "result": {
+              "status": "passed",
+              "duration": 115000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 43,
+            "name": "The user clicks on SIAIT logo",
+            "result": {
+              "status": "passed",
+              "duration": 1824000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 44,
+            "name": "The user is redirected to home page",
+            "result": {
+              "status": "passed",
+              "duration": 8000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "home-page-feature;navigate-between-\"gestion-rh\"->-\"congés\"-submenu",
+        "keyword": "Scenario",
+        "line": 49,
+        "name": "Navigate between \"Gestion RH\" > \"Congés\" submenu",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 6,
+            "name": "user is on SIAIT home page",
+            "result": {
+              "status": "passed",
+              "duration": 2530000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 40,
+            "name": "The user clicks on \"Gestion RH\" menu",
+            "result": {
+              "status": "passed",
+              "duration": 647000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 41,
+            "name": "The user clicks on \"Congés\" menu",
+            "result": {
+              "status": "passed",
+              "duration": 452000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 42,
+            "name": "The \"Congés\" submenu is displayed",
+            "result": {
+              "status": "passed",
+              "duration": 8000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 43,
+            "name": "The user clicks on SIAIT logo",
+            "result": {
+              "status": "passed",
+              "duration": 1795000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 44,
+            "name": "The user is redirected to home page",
+            "result": {
+              "status": "passed",
+              "duration": 8000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "home-page-feature;navigate-between-\"gestion-rh\"->-\"fiches-de-paie\"-submenu",
+        "keyword": "Scenario",
+        "line": 50,
+        "name": "Navigate between \"Gestion RH\" > \"Fiches de Paie\" submenu",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 6,
+            "name": "user is on SIAIT home page",
+            "result": {
+              "status": "passed",
+              "duration": 2450000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 40,
+            "name": "The user clicks on \"Gestion RH\" menu",
+            "result": {
+              "status": "passed",
+              "duration": 615000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 41,
+            "name": "The user clicks on \"Fiches de Paie\" menu",
+            "result": {
+              "status": "passed",
+              "duration": 459000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 42,
+            "name": "The \"Fiches de Paie\" submenu is displayed",
+            "result": {
+              "status": "passed",
+              "duration": 12000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 43,
+            "name": "The user clicks on SIAIT logo",
+            "result": {
+              "status": "passed",
+              "duration": 1759000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 44,
+            "name": "The user is redirected to home page",
+            "result": {
+              "status": "passed",
+              "duration": 14000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "home-page-feature;navigate-between-\"gestion-rh\"->-\"prêts/avances\"-submenu",
+        "keyword": "Scenario",
+        "line": 51,
+        "name": "Navigate between \"Gestion RH\" > \"Prêts/Avances\" submenu",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 6,
+            "name": "user is on SIAIT home page",
+            "result": {
+              "status": "passed",
+              "duration": 2500000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 40,
+            "name": "The user clicks on \"Gestion RH\" menu",
+            "result": {
+              "status": "passed",
+              "duration": 632000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 41,
+            "name": "The user clicks on \"Prêts/Avances\" menu",
+            "result": {
+              "status": "passed",
+              "duration": 391000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 42,
+            "name": "The \"Prêts/Avances\" submenu is displayed",
+            "result": {
+              "status": "passed",
+              "duration": 104000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 43,
+            "name": "The user clicks on SIAIT logo",
+            "result": {
+              "status": "passed",
+              "duration": 1735000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 44,
+            "name": "The user is redirected to home page",
+            "result": {
+              "status": "passed",
+              "duration": 10000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "home-page-feature;navigate-between-\"gestion-rh\"->-\"réclamations\"-submenu",
+        "keyword": "Scenario",
+        "line": 52,
+        "name": "Navigate between \"Gestion RH\" > \"Réclamations\" submenu",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 6,
+            "name": "user is on SIAIT home page",
+            "result": {
+              "status": "passed",
+              "duration": 2918000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 40,
+            "name": "The user clicks on \"Gestion RH\" menu",
+            "result": {
+              "status": "passed",
+              "duration": 671000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 41,
+            "name": "The user clicks on \"Réclamations\" menu",
+            "result": {
+              "status": "passed",
+              "duration": 403000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 42,
+            "name": "The \"Réclamations\" submenu is displayed",
+            "result": {
+              "status": "passed",
+              "duration": 101000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 43,
+            "name": "The user clicks on SIAIT logo",
+            "result": {
+              "status": "passed",
+              "duration": 1723000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 44,
+            "name": "The user is redirected to home page",
+            "result": {
+              "status": "passed",
+              "duration": 14000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "home-page-feature;navigate-between-\"gestion-rh\"->-\"equipes\"-submenu",
+        "keyword": "Scenario",
+        "line": 53,
+        "name": "Navigate between \"Gestion RH\" > \"Equipes\" submenu",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 6,
+            "name": "user is on SIAIT home page",
+            "result": {
+              "status": "passed",
+              "duration": 2513000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 40,
+            "name": "The user clicks on \"Gestion RH\" menu",
+            "result": {
+              "status": "passed",
+              "duration": 629000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 41,
+            "name": "The user clicks on \"Equipes\" menu",
+            "result": {
+              "status": "passed",
+              "duration": 383000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 42,
+            "name": "The \"Equipes\" submenu is displayed",
+            "result": {
+              "status": "passed",
+              "duration": 97000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 43,
+            "name": "The user clicks on SIAIT logo",
+            "result": {
+              "status": "passed",
+              "duration": 1672000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 44,
+            "name": "The user is redirected to home page",
+            "result": {
+              "status": "passed",
+              "duration": 14000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "home-page-feature;navigate-between-\"gestion-des-projets-&-ressources\"->-\"projets\"-submenu",
+        "keyword": "Scenario",
+        "line": 65,
+        "name": "Navigate between \"Gestion des projets & Ressources\" > \"Projets\" submenu",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 6,
+            "name": "user is on SIAIT home page",
+            "result": {
+              "status": "passed",
+              "duration": 2493000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 57,
+            "name": "The user clicks on \"Gestion des projets & Ressources\" menu",
+            "result": {
+              "status": "passed",
+              "duration": 655000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 58,
+            "name": "The user clicks on \"Projets\" menu",
+            "result": {
+              "status": "passed",
+              "duration": 369000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 59,
+            "name": "The \"Projets\" submenu is displayed",
+            "result": {
+              "status": "passed",
+              "duration": 104000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 60,
+            "name": "The user clicks on SIAIT logo",
+            "result": {
+              "status": "passed",
+              "duration": 1707000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 61,
+            "name": "The user is redirected to home page",
+            "result": {
+              "status": "passed",
+              "duration": 10000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "home-page-feature;navigate-between-\"gestion-des-projets-&-ressources\"->-\"imputation\"-submenu",
+        "keyword": "Scenario",
+        "line": 66,
+        "name": "Navigate between \"Gestion des projets & Ressources\" > \"Imputation\" submenu",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 6,
+            "name": "user is on SIAIT home page",
+            "result": {
+              "status": "passed",
+              "duration": 2516000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 57,
+            "name": "The user clicks on \"Gestion des projets & Ressources\" menu",
+            "result": {
+              "status": "passed",
+              "duration": 640000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 58,
+            "name": "The user clicks on \"Imputation\" menu",
+            "result": {
+              "status": "passed",
+              "duration": 431000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 59,
+            "name": "The \"Imputation\" submenu is displayed",
+            "result": {
+              "status": "passed",
+              "duration": 98000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 60,
+            "name": "The user clicks on SIAIT logo",
+            "result": {
+              "status": "passed",
+              "duration": 1745000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 61,
+            "name": "The user is redirected to home page",
+            "result": {
+              "status": "passed",
+              "duration": 13000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "home-page-feature;navigate-between-\"gestion-des-projets-&-ressources\"->-\"tâches\"-submenu",
+        "keyword": "Scenario",
+        "line": 67,
+        "name": "Navigate between \"Gestion des projets & Ressources\" > \"Tâches\" submenu",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 6,
+            "name": "user is on SIAIT home page",
+            "result": {
+              "status": "passed",
+              "duration": 2458000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 57,
+            "name": "The user clicks on \"Gestion des projets & Ressources\" menu",
+            "result": {
+              "status": "passed",
+              "duration": 549000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 58,
+            "name": "The user clicks on \"Tâches\" menu",
+            "result": {
+              "status": "passed",
+              "duration": 371000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 59,
+            "name": "The \"Tâches\" submenu is displayed",
+            "result": {
+              "status": "passed",
+              "duration": 98000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 60,
+            "name": "The user clicks on SIAIT logo",
+            "result": {
+              "status": "passed",
+              "duration": 2328000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 61,
+            "name": "The user is redirected to home page",
+            "result": {
+              "status": "passed",
+              "duration": 14000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "home-page-feature;navigate-between-\"gestion-des-projets-&-ressources\"->-\"fdt\"-submenu",
+        "keyword": "Scenario",
+        "line": 68,
+        "name": "Navigate between \"Gestion des projets & Ressources\" > \"FDT\" submenu",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 6,
+            "name": "user is on SIAIT home page",
+            "result": {
+              "status": "passed",
+              "duration": 3146000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 57,
+            "name": "The user clicks on \"Gestion des projets & Ressources\" menu",
+            "result": {
+              "status": "passed",
+              "duration": 559000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 58,
+            "name": "The user clicks on \"FDT\" menu",
+            "result": {
+              "status": "passed",
+              "duration": 355000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 59,
+            "name": "The \"FDT\" submenu is displayed",
+            "result": {
+              "status": "passed",
+              "duration": 10000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 60,
+            "name": "The user clicks on SIAIT logo",
+            "result": {
+              "status": "passed",
+              "duration": 3413000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 61,
+            "name": "The user is redirected to home page",
+            "result": {
+              "status": "passed",
+              "duration": 10000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "home-page-feature;navigate-between-\"gestion-de-performance\"->-\"objectifs\"-submenu",
+        "keyword": "Scenario",
+        "line": 79,
+        "name": "Navigate between \"Gestion de performance\" > \"Objectifs\" submenu",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 6,
+            "name": "user is on SIAIT home page",
+            "result": {
+              "status": "passed",
+              "duration": 2787000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 71,
+            "name": "The user clicks on \"Gestion de performance\" menu",
+            "result": {
+              "status": "passed",
+              "duration": 644000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 72,
+            "name": "The user clicks on \"Objectifs\" menu",
+            "result": {
+              "status": "passed",
+              "duration": 479000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 73,
+            "name": "The \"Objectifs\" submenu is displayed",
+            "result": {
+              "status": "passed",
+              "duration": 1630000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 74,
+            "name": "The user clicks on SIAIT logo",
+            "result": {
+              "status": "passed",
+              "duration": 1916000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 75,
+            "name": "The user is redirected to home page",
+            "result": {
+              "status": "passed",
+              "duration": 11000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "home-page-feature;navigate-between-\"gestion-de-performance\"->-\"gestion-des-campagnes\"-submenu",
+        "keyword": "Scenario",
+        "line": 80,
+        "name": "Navigate between \"Gestion de performance\" > \"Gestion des campagnes\" submenu",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 6,
+            "name": "user is on SIAIT home page",
+            "result": {
+              "status": "passed",
+              "duration": 2452000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 71,
+            "name": "The user clicks on \"Gestion de performance\" menu",
+            "result": {
+              "status": "passed",
+              "duration": 657000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 72,
+            "name": "The user clicks on \"Gestion des campagnes\" menu",
+            "result": {
+              "status": "passed",
+              "duration": 429000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 73,
+            "name": "The \"Gestion des campagnes\" submenu is displayed",
+            "result": {
+              "status": "passed",
+              "duration": 8000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 74,
+            "name": "The user clicks on SIAIT logo",
+            "result": {
+              "status": "passed",
+              "duration": 1777000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 75,
+            "name": "The user is redirected to home page",
+            "result": {
+              "status": "passed",
+              "duration": 10000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "home-page-feature;navigate-between-\"gestion-de-performance\"->-\"tableau-de-bord\"-submenu",
+        "keyword": "Scenario",
+        "line": 81,
+        "name": "Navigate between \"Gestion de performance\" > \"Tableau de bord\" submenu",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 6,
+            "name": "user is on SIAIT home page",
+            "result": {
+              "status": "passed",
+              "duration": 2931000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 71,
+            "name": "The user clicks on \"Gestion de performance\" menu",
+            "result": {
+              "status": "passed",
+              "duration": 612000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 72,
+            "name": "The user clicks on \"Tableau de bord\" menu",
+            "result": {
+              "status": "passed",
+              "duration": 529000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 73,
+            "name": "The \"Tableau de bord\" submenu is displayed",
+            "result": {
+              "status": "passed",
+              "duration": 11000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 74,
+            "name": "The user clicks on SIAIT logo",
+            "result": {
+              "status": "passed",
+              "duration": 1822000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 75,
+            "name": "The user is redirected to home page",
+            "result": {
+              "status": "passed",
+              "duration": 13000000
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

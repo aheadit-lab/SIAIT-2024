@@ -1,0 +1,47 @@
+{
+
+    "correctCredentials": {
+      "login": "r.mannai",
+      "password": "ait12436+",
+      "fullName": "Mannai Radhia",
+      "email": "radhia.manai@gmail.com",
+      "firstname": "Radhia",
+      "lastname": "MANNAI"
+    },
+    "managerCorrectCredentials": {
+      "login": "m.koubaa",
+      "password": "ait12436+",
+      "fullName": "KOUBAA Mohamed",
+      "firstname": "Mohamed",
+      "lastname": "KOUBAA"
+    },
+    "adminCredentials": {
+      "login": "m.koubaa",
+      "password": "ait12436+",
+      "fullName": "KOUBAA Mohamed"
+    },
+    "incorrectCredentials": {
+      "login": "m.koubaa_",
+      "password": "ait12436+_",
+      "email": "test.wrongval@yopmail.com",
+      "invalidFormatemail" : "test.wrongval"
+    },
+    "user1": {
+      "login": "eya.hamdi",
+      "password": "ait12436+",
+      "fullName": "Hamdi Eya",
+      "email": "eya@yopmail.com"
+    },
+    "user2": {
+      "login": "test2.test",
+      "password": "ait12436+",
+      "fullName": "Rma Lil",
+      "email": "user.test2@yopmail.com"
+    },
+    "user3": {
+      "login": "test3.test",
+      "password": "ait12436+",
+      "fullName": "Toto Totou",
+      "email": "user.test3@yopmail.com"
+    }
+  }

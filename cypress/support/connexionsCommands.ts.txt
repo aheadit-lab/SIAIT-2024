@@ -1,0 +1,319 @@
+// <reference types="Cypress" />
+import { LoginPage, DashboardPage  } from "../e2e/index";
+
+
+let resetConnection: boolean = false;
+
+//  --------------------------------- new commands -------------------------------
+
+
+// add a custom command cy.login()
+Cypress.Commands.add("ensureIsLogged", (user) => {
+
+  function doLogin() {
+
+    const loginForm = Cypress.$('p.card-title:contains("Connectez Vous")');
+
+        if (loginForm.length > 0) {
+          (cy as any).login();
+        }
+        else {
+      DashboardPage.getHomePageURL().should('exist');
+
+            }
+
+  }
+
+
+
+
+  if (resetConnection) {
+
+    cy.log('---------- resetConnection  -------');
+    cy.clearCookies();
+    // cy.clearLocalStorage();
+    cy.visit(`${params.baseUrl}`,
+      {
+        onBeforeLoad(win) {
+          console.log(' ------- onBeforeLoad -----------');
+          win.sessionStorage.clear();
+        }
+      }).get('[id="kc-form-login"]', { timeout: 60000 })
+      .then(() => {
+        cy.log('--------- start dologin after onload --');
+        resetConnection = false;
+        doLogin();
+
+      })
+
+
+  }
+  else {
+    cy.log('--------- direct login ---');
+    doLogin();
+  }
+
+});
+
+
+// add a custom command cy.logout()
+Cypress.Commands.add("logout", () => {
+
+  let popupNotifs = Cypress.$('button[class*="p-sidebar-close"]');
+
+
+  if (popupNotifs.length > 0) {
+    NavigationPage.getDashboardNotificationsPromise().click({ force: true }).then(() => {
+      NavigationPage.getSettingsButton().click({ force: true });
+      NavigationPage.getBtnLogout().click().then(() => {
+        LoginPage.getLoginForm().should('exist');
+      });
+    });
+
+  }
+  else {
+    let settingsBtn = Cypress.$(NavigationPage.getSettingsButtonSelector());
+    if (settingsBtn.length > 0) {
+      NavigationPage.getSettingsButton().click({ force: true }).then(() => {
+        NavigationPage.getBtnLogout().click({ force: true }).then(() => {
+          LoginPage.getLoginForm().should('exist');
+        });
+      });
+    }
+  }
+
+});
+
+
+
+
+
+
+Cypress.Commands.add("accessToDashoard", () => {
+
+  if (Cypress.$('[qa="img_organizationBannerUrl"]').length > 0) {
+    NavigationPage.getLogoDashbordBanner().should('be.visible');
+    NavigationPage.getLogoDashbordBanner().click({ force: true }).then(() => {
+
+      let popupNotifs = Cypress.$('button[class*="p-sidebar-close"]');
+
+      if (popupNotifs.length > 0) {
+        //   cy.log('----  popupNotifs displayed  ----- ');
+
+        NavigationPage.getDashboardNotificationsPromise().click({ force: true }).then(() => {
+          NavigationPage.getWelcomeMsg().should('be.visible')
+        });
+      }
+    });
+
+  }
+  else
+    if (Cypress.$('[qa="img_organizationLogoUrl"]').length > 0) {
+
+      NavigationPage.getLogoDashbord().should('be.visible');
+      NavigationPage.getLogoDashbord().click({ force: true }).then(() => {
+
+        let popupNotifs = Cypress.$('button[class*="p-sidebar-close"]');
+
+        if (popupNotifs.length > 0) {
+          //    cy.log('----  popupNotifs displayed  ----- ');
+
+          NavigationPage.getDashboardNotificationsPromise().click({ force: true }).then(() => {
+            NavigationPage.getWelcomeMsg().should('be.visible')
+          });
+        }
+      });
+
+    }
+
+});
+
+
+
+Cypress.Commands.add("connect", (login: string, pwd: string) => {
+
+  cy.get('body')
+    .then(($body) => {
+      cy.log('---- body found --- ');
+
+      let loginForm = Cypress.$('[id="kc-form-login"]');
+
+      if (loginForm.length > 0) {
+
+        //   cy.log('---- on login page ----- ');
+        LoginPage.getUsernameField().should("exist").type(login);
+        LoginPage.getPasswordField().type(pwd);
+        LoginPage.getConnectionButton().should("be.visible").click().then(() => {
+          NavigationPage.getDashboardURL(`${OrgaData.parentOrga}`).should("exist");
+          (cy as any).setEnglishLanguage();
+          DevicesInventoryPage.ensureGridColumnIsDisplayed("Devices", "DeviceGuid");
+        });
+
+      }
+      else {
+        //   cy.log('---- not on login  page ----- ');
+
+        cy.get('app-root').then(() => {
+
+          //   cy.log('---- on angular page ----- ');
+          let popupNotifs = Cypress.$('button[class*="p-sidebar-close"]');
+
+          if (popupNotifs.length > 0) {
+            //   cy.log('----  popupNotifs displayed  ----- ');
+
+            NavigationPage.getDashboardNotificationsPromise().click({ force: true });
+          }
+          else {
+            //      cy.log('----  no popupNotifs displayed  ----- ');
+          }
+        });
+
+      }
+    });
+
+});
+
+
+
+
+Cypress.Commands.add("connect", (login: string, pwd: string) => {
+
+  function doLogin() {
+
+    cy.log('--------- start dologin');
+
+    console.log('------------ doLogin ------');
+
+    cy.get('body')
+      .then(($body) => {
+
+        cy.log('---- body found --- ');
+
+        let loginForm = Cypress.$('[id="kc-form-login"]');
+
+        if (loginForm.length > 0) {
+
+          cy.log('---- on login page ----- ');
+          LoginPage.getUsernameField().should("exist").type(login);
+          LoginPage.getPasswordField().type(pwd);
+          LoginPage.getConnectionButton().should("be.visible").click().then(() => {
+            NavigationPage.getDashboardURL(`${OrgaData.parentOrga}`).should("exist");
+            (cy as any).setEnglishLanguage();
+            DevicesInventoryPage.ensureGridColumnIsDisplayed("Devices", "DeviceGuid");
+
+          });
+
+        }
+        else {
+          cy.log('---- not on login  page ----- ');
+
+          cy.get('app-root').then(() => {
+
+            cy.log('---- on angular page ----- ');
+            let popupNotifs = Cypress.$('button[class*="p-sidebar-close"]');
+
+            if (popupNotifs.length > 0) {
+              cy.log('----  popupNotifs displayed  ----- ');
+
+              NavigationPage.getDashboardNotificationsPromise().click({ force: true });
+
+            }
+            else {
+              cy.log('----  no popupNotifs displayed  ----- ');
+            }
+
+          });
+
+        }
+      });
+  }
+
+  cy.on("fail", (err, runnable) => {
+    console.log(' --- test console  111111111111111 --- ');
+
+    resetConnection = true;
+
+    throw err;
+
+
+  });
+
+
+  if (resetConnection) {
+
+    cy.log('---------- resetConnection  -------');
+    cy.clearCookies();
+    // cy.clearLocalStorage();
+    cy.visit(`${params.baseUrl}`,
+      {
+        onBeforeLoad(win) {
+          console.log(' ------- onBeforeLoad -----------');
+          win.sessionStorage.clear();
+        }
+      }).get('[id="kc-form-login"]', { timeout: 60000 })
+      .then(() => {
+        cy.log('--------- start dologin after onload --');
+        resetConnection = false;
+        doLogin();
+
+      })
+
+
+  }
+  else {
+    cy.log('--------- direct login ---');
+    doLogin();
+  }
+});
+
+
+
+
+// add a custom command cy.logout()
+Cypress.Commands.add("resetSession", () => {
+
+  cy.log('---- reset session --- ');
+  resetConnection = true;
+
+
+});
+
+// add a custom command cy.logout()
+Cypress.Commands.add("ensureOnConnectionPage", () => {
+
+  Cypress.Cookies.debug(true);
+
+  cy.log('---- reset session --- ');
+  resetConnection = true;
+
+
+
+  cy.get('body')
+    .then(($body) => {
+
+      cy.log('---- body found --- ');
+
+      let loginForm = Cypress.$('[id="kc-form-login"]');
+
+      if (!loginForm.length) {
+
+        cy.visit(`${params.baseUrl}`,
+          {
+            onBeforeLoad(win) {
+              console.log(' ------- onBeforeLoad -----------');
+              win.sessionStorage.clear();
+            }
+          }).get('[id="kc-form-login"]', { timeout: 60000 })
+          .then(() => {
+            cy.log('--------- connection page is displayed  --');
+            resetConnection = true;
+            //  doLogin();
+          })
+      }
+      else {
+        (cy as any).accessToDashoard();
+        (cy as any).logout();
+      }
+    });
+
+});

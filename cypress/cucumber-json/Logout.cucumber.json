@@ -1,0 +1,63 @@
+[
+  {
+    "description": "    I want to logout from the SIAIT site",
+    "keyword": "Feature",
+    "name": "Logout feature",
+    "line": 2,
+    "id": "logout-feature",
+    "tags": [],
+    "uri": "Logout.feature",
+    "elements": [
+      {
+        "id": "logout-feature;logout",
+        "keyword": "Scenario",
+        "line": 10,
+        "name": "Logout",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 7,
+            "name": "user is on SIAIT home page",
+            "result": {
+              "status": "passed",
+              "duration": 5078000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 11,
+            "name": "The user clicks on profile menu",
+            "result": {
+              "status": "passed",
+              "duration": 206000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 12,
+            "name": "The user clicks on disconnection submenu",
+            "result": {
+              "status": "passed",
+              "duration": 221000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 13,
+            "name": "The user is redirected to login page",
+            "result": {
+              "status": "passed",
+              "duration": 247000000
+            }
+          }
+        ]
+      }
+    ]
+  }
+]
